@@ -921,7 +921,7 @@ trait Config extends ConfigMergeable {
      * @throws ConfigException.WrongType
      *             if value is not convertible to a list of doubles
      */
-     def getDoubleList(path: String): List[java.lang.Double]
+    def getDoubleList(path: String): List[java.lang.Double]
 
     /**
      * Gets a list value with string elements.  Throws if the

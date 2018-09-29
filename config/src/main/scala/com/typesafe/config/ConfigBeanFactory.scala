@@ -46,6 +46,6 @@ object ConfigBeanFactory {
      *     Can throw the same exceptions as the getters on <code>Config</code>
      */
     def create[T](config: Config, clazz: Class[T]): T =
-      ConfigBeanImpl.createInternal(config, clazz)
+        ConfigBeanImpl.createInternal(config, clazz)
 
 }

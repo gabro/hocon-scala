@@ -61,8 +61,8 @@ lazy val configLib =  Project("config", file("config"))
   .dependsOn(testLib % "test->test")
   .settings(osgiSettings)
   .settings(nocomma {
-    autoScalaLibrary                       := false
-    crossPaths                             := false
+    autoScalaLibrary                       := true
+    crossPaths                             := true
     libraryDependencies                    += "net.liftweb" %% "lift-json" % "2.5" % Test
     libraryDependencies                    += "com.novocode" % "junit-interface" % "0.11" % Test
 
